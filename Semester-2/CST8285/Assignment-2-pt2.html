@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <title>Contact page</title> 
+</head>
+
+<div id="top"> 
+<h1> Contact Us </h1>
+<p>Please complete the information below.<br> Fields marked with <span class="required">*</span> are required fields</p>
+</div>
+
+
+<div id="data"> 
+    <form action="mailto:text@text.text" method="post" enctype="text/plain">
+
+ 
+        <fieldset> 
+            
+            <legend>Your Data</legend> 
+            
+                <label for="fname">First Name : *</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your Name.." required>
+                <br>
+                <label for="lname">Last Name : <span class="required">*</span></label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Last Name.." required>
+            <br>
+                <label for="streetaddress">Street Address :<span class="required">*</span></label>
+                <input type="text" id="streetaddress" name="streetaddress" placeholder="Your Street Address.." required>
+        <br>
+                <label for="city">City : <span class="required">*</span></label>
+                <input type="text" id="city" name="city" placeholder="Your City .." required>   
+                <br>
+                <label for="province">Province<span class="required">*</span></label>
+    <select id="province" name="province" required>
+      <option value="" disabled selected hidden> Please select an option</option>
+      <option value="alberta">AB</option>
+      <option value="britishcolumbia">BC</option>
+      <option value="manitoba">MB</option>
+      <option value="newbrunswick">NB</option>
+      <option value="newfoundlandLabrador">NL</option>
+      <option value="northwestterritories">NT</option>
+      <option value="novascotia">NS</option>
+      <option value="nunavut">NU</option>
+      <option value="ontario">ON</option>
+      <option value="princeedwardisland">PE</option>
+      <option value="quebec">QC</option>
+      <option value="saskatchewan">SK</option>
+      <option value="yukon">YT</option>
+    </select>
+    <br>
+    <label for="postalcode">Postal Code :<span class="required">*</span> </label>
+    <input type="text" id="postalcode" name="postalcode" placeholder="Your Postal Code.." required>   
+    <br>
+    <label for="emailaddress">Email Address : <span class="required">*</span></label>
+    <input type="text" id="emailaddress" name="emailaddress" placeholder="Your Email Address.." required > 
+    <br>
+    <label for="phonenumber">Phone Number : <span class="required">*</span></label>
+    <input type="text" id="phonenumber" name="phonenumber" placeholder="Your Phone Number.." required > 
+            
+           
+        </fieldset> 
+        <fieldset> 
+            <legend> Agreement </legend> 
+            <input type="checkbox"  name="boxset" value="data" required/>
+            <label id="acceptedagreement"> Accept Agreement </label>
+        </fieldset> 
+        <input type="reset"> 
+        <input type="submit" class="Submit Form" value="Submit Form">
+        
+
+
+        </form>
+
+</div>
+
+
+
